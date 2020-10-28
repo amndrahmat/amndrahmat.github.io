@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Amanda Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!----------------------------HEADER--------------------------------->
+    <div id="navbar">
+      <img class="logo" src="img/logo.png" />
+      <div id="navbar-right">
+        <a href="#home">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#Achievement">Achievement</a>
+        <a href="#work">My Skills</a>
+        <a href="#project">My Projects</a>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <!----------------------------introduction---------------------------->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Amanda Rahmat Hidayat</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Web Developer
+      </p>
+      <img src="img/amanda.jpg" alt="Profil Amanda" class="intro__img" />
+    </section>
+
+    <!------------------------------About me------------------------------>
+    <section class="about-me" id="aboutme">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Web Developer
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Innovative Web developer by building and maintaining responsive websites. 
+          Proficient in HTML, CSS/Sass, Javascript, PHP; plus modern libraries and frameworks. 
+          plus modern libraries and frameworks. Seeking a career in the tech industry with a
+          creative and challenging environment that provides an opportunity to
+          utilize and apply my skills. Highly motivated to learn new things and
+          interested in adding experiences. Comfortable collaborating with team
+          members and working independently.
+        </p>
+        <button class="down-cv" href="./cv.pdf">Download CV</button>
+      </div>
+      <img src="img/amanda2.jpg" alt="Profil Amanda" class="about-me__img" />
+    </section>
+
+    <!--------------------------------My Services-------------------------------->
+    <section class="my-services" id="Achievement">
+      <h2 class="section__title section__title--services">Achievement</h2>
+      <div class="services">
+        <!--Service-->
+        <div class="service">
+          <h3>Program Kreativitas Mahasiswa-KC</h3>
+          <p>
+            Has attended and funded PKM KC BELMAWA with the title “SMASH ENERGY
+            (Smart Trash Bin With Solar Energy)” from Kementerian Riset dan
+            Teknologi Republik Indonesia.
+          </p>
+        </div>
+
+        <!--Service-->
+        <div class="service">
+          <h3>Publication</h3>
+          <p>
+            From Industrial Research Workshop & National Seminar “Perancangan
+            Dan Realisasi SMASH ENERGY (Smart Trash Bin With Solar Energy)”
+          </p>
+        </div>
+
+        <!--Service-->
+        <div class="service">
+          <h3>Hackathon</h3>
+          <p>
+            Finalist Hackathon Toyota FunCode (2019) From Toyota Indonesia with
+            idea of ​​making a game application.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------My Work---------------------------------->
+    <section class="my-work" id="work">
+      <h2 class="judulwork">My Skills</h2>
+      <br />
+
+      <div class="tabwork">
+        <button class="tablinkswork" onclick="openwork(event, 'aa')">
+          Web Development
+        </button>
+        <button class="tablinkswork" onclick="openwork(event, 'bb')">
+          IOT Development
+        </button>
+        <button class="tablinkswork" onclick="openwork(event, 'cc')">
+          Photography
+        </button>
+      </div>
+
+      <div id="aa" class="tabcontentwork">
+        <img src="img/html.png" class="imgwork" />
+        <img src="img/css.png" class="imgwork" />
+        <img src="img/php.png" class="imgwork" />
+        <img src="img/js.png" class="imgwork" />
+        <img src="img/react.png" class="imgwork" /><br />
+        <img src="img/sql.png" class="imgwork" />
+        <img src="img/api.png" class="imgwork" />
+        <img src="img/webpack.png" class="imgwork" />
+        <img src="img/nodejs.png" class="imgwork" />
+        <img src="img/laravel-logo.png" class="imgwork" />
+      </div>
+
+      <div id="bb" class="tabcontentwork">
+        <img src="img/arduino.png" class="imgwork" />
+        <img src="img/esp8266.jpg" class="imgwork" />
+        <img src="img/esp32.jpg" class="imgwork" />
+        <img src="img/firebase.png" class="imgwork" />
+        <img src="img/androids.png" class="imgwork" />
+      </div>
+
+      <div id="cc" class="tabcontentwork">
+        <img src="img/lg.png" class="imgwork" />
+        <img src="img/sn.png" class="imgwork" />
+        <img src="img/PG.jpg" class="imgwork" />
+      </div>
+    </section>
+
+    <!----------------------------------My Project---------------------------------->
+    <section class="my-project" id="project">
+      <h2 class="section__title section__title--work">My Projects</h2>
+
+      <div class="tabproject" id="mytabproject">
+        <button class="tablinksproject" onclick="openproject(event, 'aaa')">
+          Web Development
+        </button>
+        <button class="tablinksproject" onclick="openproject(event, 'bbb')">
+          IOT Development
+        </button>
+        <button class="tablinksproject" onclick="openproject(event, 'ccc')">
+          Photography
+        </button>
+      </div>
+
+      <div id="aaa" class="tabcontentproject">
+        <!-- Portfolio Gallery Grid -->
+        <div class="webs2">
+          <!--Service-->
+          <div class="web2">
+            <img src="img/W1.png" />
+            <h3>Redleaf Messenger</h3>
+            <p>
+              This project is a form of front end web programming training. This
+              project is about the messenger. This application can exchange
+              messages like applications that are already circulating in the
+              market such as WhatsApp or Facebook Messenger.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/wa1.png" />
+            <h3>Redleaf Social Network</h3>
+            <p>
+              This project is a development from the previous project, namely
+              Redleaf messenger. This application is like the ones already on
+              the market such as Facebook or Twitter. Where applications can
+              post status in the form of images or text, can add friends, and of
+              course, can chat with friends.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/amov1.png" />
+            <h3>AMAN Movies</h3>
+            <p>
+              This project is the final project of my training. This application
+              is a movie application that can display movie trailers in various
+              genres. This application uses ES6 syntax in writing JavaScript
+              code, uses Webpack as a module bundler, and utilizes an API using
+              AJAX concepts.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/aso1.png" />
+            <h3>AMANSPORT STORE</h3>
+            <p>
+              This application is an online shopping application, especially for
+              sports goods such as sportswear and sports accessories. This
+              application uses ES6 syntax in writing JavaScript code and uses
+              Webpack as a module bundler.
+            </p>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <button class="link" onclick="document.location='html/web.html'">
+          Learn More
+        </button><br><br><br><br>
+        <h2>React Js Project</h2>
+
+        <div class="webs2">
+          <!--Service-->
+          <div class="web2">
+            <img src="img/kit1.png" />
+            <h3>AMAN KITCHEN</h3>
+            <p>
+              This project is about a restaurant blog. This application can provide information or news on food and beverages as well as information on food recipes.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/spot1.png" />
+            <h3>Spotify</h3>
+            <p>
+              This project is about a music application developed from a smartphone application.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/wt1.png" />
+            <h3>AMAN BACKPACK STORY</h3>
+            <p>
+              This project is about blogger stories, stories about traveling trips, providing traveling tips and tricks, providing events etc.
+            </p>
+          </div>
+          <div class="web2">
+            <img src="img/astore1.png" />
+            <h3>ASTORE</h3>
+            <p>
+               This application is an online shopping application, especially women's fashion items such as clothes, pants, bags and etc.
+            </p>
+          </div>
+         
+        </div>
+        <!-- <br /> -->
+        <button class="link" onclick="document.location='html/react.html'">
+          Learn More
+        </button>
+        <!-- END GRID -->
+      </div>
+
+      <div id="bbb" class="tabcontentproject">
+        <!-- Portfolio Gallery Grid -->
+        <div class="webs22">
+          <!--Service-->
+          <div class="web2">
+            <img src="img/i2.png" />
+            <h3>SMASH ENERGY</h3>
+            <p>
+              This IoT project is about Trash Bins that can sort waste into two
+              types, metal waste, and non-metal waste. This trash Bin is
+              equipped with solar energy (Solar Panel) so, it does not require
+              additional electrical energy. This project is equipped with an
+              Android application and a Web application as a means of
+              information and notification when the Trash Bins is full.
+            </p>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <button class="link" onclick="document.location='html/iot.html'">
+          Read More
+        </button>
+
+        <!-- END GRID -->
+      </div>
+
+      <div id="ccc" class="tabcontentproject">
+        <!-- Portfolio Gallery Grid -->
+        <div class="webs2">
+          <div class="web2">
+            <img src="img/p1-min.jpg" />
+            <h3>Sawarna Beach (2019)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p2-min.jpg" />
+            <h3>Putri Duyung Cottage Ancol (2019)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p3-min.jpg" />
+            <h3>Sawarna Beach (2019)</h3>
+          </div>
+        </div>
+
+        <div class="webs2">
+          <div class="web2">
+            <img src="img/p4-min.jpg" />
+            <h3>Bandung Institute of Technology (2019)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p5-min.jpg" />
+            <h3>Sawarna Beach (2019)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p6-min.jpg" />
+            <h3>Sawarna Beach (2019)</h3>
+          </div>
+        </div>
+
+        <div class="webs2">
+          <div class="web2">
+            <img src="img/p7-min.jpg" />
+            <h3>Bandung City (2018)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p8-min.jpg" />
+            <h3>Karangsong Beach (2018)</h3>
+          </div>
+          <div class="web2">
+            <img src="img/p9-min.jpg" />
+            <h3>Santolo Beach (2018)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------Footer------------------------------------>
+    <footer class="footer">
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:Amandarht@gmail.com" class="footer__link"
+        >Amandarht@gmail.com</a
+      >
+      <br />
+      <i class="fa fa-user"></i>
+      <a href="tel:+6287822834418" class="footer__link">+6287822834418</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/amndrahmat/"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/amandarahmath/"
+          >
+            <i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a class="social-list__link" href="">
+            <i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="footer__link">
+        Copyright ©2020 by Amanda Rahmat Hidayat
+      </p>
+      <!--social-attach-bar-->
+      <div class="social">
+        <a href="https://www.instagram.com/amndrahmat/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/amandarahmath/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
